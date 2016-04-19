@@ -1,0 +1,15 @@
+list:
+
+ 编译命令:
+ make           //编译rha-spi.ko
+ make app       //编译调试程序spitest
+ make clean     //清理工程
+
+使用方法：
+insmod rha-spi.ko        //插入驱动模块
+rmmod rha-spi            //卸载驱动模块
+./spitest /dev/rha_spi <val>      //test
+
+
+MBI5026 芯片spi操作驱动
+具体应用程序参考spitest.c
